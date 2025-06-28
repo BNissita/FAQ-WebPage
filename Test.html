@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce FAQ Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers to common questions about shipping, returns, payments, and orders. <br><br>Can’t find what you’re looking for? Contact our support team.</p>
+    </header>
+    <div class="tab-navigation">
+        <div class="tab-container">
+            <button class="tab-button active" data-tab="shipping">Shipping</button>
+            <button class="tab-button" data-tab="returns">Returns</button>
+            <button class="tab-button" data-tab="payment">Payment</button>
+            <button class="tab-button" data-tab="orders">Orders</button>
+        </div>
+    </div>
+    
+
+    <div>
+      <div class="tab-panel active" id="shipping">
+        <div class="accordion-item open">
+          <button class="accordion-header">How long does delivery take? <span class="icon">-</span></button>
+          <div class="accordion-body">Standard shipping usually takes 3–7 business days. Expedited options are available at checkout.</div>
+        </div>
+        <div class="accordion-item open">
+          <button class="accordion-header">Do you offer international shipping? <span class="icon">-</span></button>
+          <div class="accordion-body">Yes, we ship worldwide. Shipping times and costs vary based on the destination.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">How can I track my order? <span class="icon">+</span></button>
+          <div class="accordion-body">You'll receive a tracking link via email once your order ships.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="returns">
+        <div class="accordion-item open">
+          <button class="accordion-header">What is your return policy? <span class="icon">-</span></button>
+          <div class="accordion-body">You can return unused items within 30 days of delivery for a full refund or exchange.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">How do I start a return? <span class="icon">+</span></button>
+          <div class="accordion-body">Visit our Returns Center or contact support with your order number.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">What items can't be returned? <span class="icon">+</span></button>
+          <div class="accordion-body">Final sale items, gift cards, and opened personal care products are non-returnable.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="payment">
+        <div class="accordion-item open">
+          <button class="accordion-header">What payment methods do you accept? <span class="icon">-</span></button>
+          <div class="accordion-body">We accept major cards, PayPal, Apple Pay, Google Pay, and buy-now-pay-later services.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Is my payment information secure? <span class="icon">+</span></button>
+          <div class="accordion-body">Yes. We use encryption and PCI-compliant gateways to protect your data.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Why was my payment declined? <span class="icon">+</span></button>
+          <div class="accordion-body">Check for incorrect card details or bank authorization issues.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="orders">
+        <div class="accordion-item open">
+          <button class="accordion-header">Can I change or cancel my order? <span class="icon">-</span></button>
+          <div class="accordion-body">Orders can be modified or canceled within 1 hour. Contact us quickly.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">How do I know my order was successful? <span class="icon">+</span></button>
+          <div class="accordion-body">You'll get a confirmation email after checkout.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">What if I got the wrong item? <span class="icon">+</span></button>
+          <div class="accordion-body">Please contact our team. We’ll arrange a replacement or refund.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="support">
+      <h3>Still have questions?</h3>
+      <p>Our support team is here to help you with anything else.</p>
+      <button onclick="alert('Thank you for your intrest!.Our support team will contact you soon!.')">Contact Support</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
